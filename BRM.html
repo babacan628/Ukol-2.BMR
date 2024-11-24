@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulačka kalorií</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Kalkulačka denního příjmu kalorií</h1>
+    <label for="age">Věk:</label>
+    <input type="number" id="age" placeholder="Zadejte svůj věk" required><br>
+
+    <label for="weight">Váha (kg):</label>
+    <input type="number" id="weight" placeholder="Zadejte svou váhu" required><br>
+
+    <label for="height">Výška (cm):</label>
+    <input type="number" id="height" placeholder="Zadejte svou výšku" required><br>
+
+    <label>Pohlaví:</label>
+    <input type="radio" id="male" name="gender" value="Muž">
+    <label for="male">Muž</label>
+    <input type="radio" id="female" name="gender" value="Žena">
+    <label for="female">Žena</label><br>
+
+    <label for="activity">Úroveň aktivity:</label>
+    <select id="activity">
+        <option value="1.2">Nízká</option>
+        <option value="1.55">Střední</option>
+        <option value="1.9">Vysoká</option>
+    </select><br>
+
+    <button id="calculate">Vypočítat</button>
+    <h2 id="result"></h2>
+</body>
+</html>
